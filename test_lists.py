@@ -107,7 +107,7 @@ class TestList(unittest.TestCase):
             ([], [], []),
         ]
         for x, y, expected_output in inputs_args_outputs:
-            output = is_item_present_in_list(x, y)
+            output = append_all_items_of_y_to_x(x, y)
             self.assertEqual(output, expected_output)
 
     def test_list_copy(self):

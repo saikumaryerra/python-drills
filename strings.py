@@ -7,7 +7,7 @@ def first_10_characters(x):
 
 
 def chars_4_through_10(x):
-    return x[4:11]
+    return x[4:10]
 
 
 def str_length(x):
