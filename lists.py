@@ -1,48 +1,57 @@
 def sum_items_in_list(x):
-    pass
+    return sum(x)
 
 
 def list_length(x):
-    pass
+    return len(x)
 
 
 def last_three_items(x):
-    pass
+    return x[-3:] 
 
 
 def first_three_items(x):
-    pass
+    return x[:3]
 
 
 def sort_list(x):
-    pass
+    x.sort()
+    return x
 
 
 def append_item(x, item):
-    pass
+    x.append(item)
+    return x
 
 
 def remove_last_item(x):
-    pass
+    x.pop()
+    return x
 
 
 def count_occurrences(x, item):
-    pass
+    return x.count(item)
 
 
 def is_item_present_in_list(x, item):
-    pass
+    return item in x
 
 
 def append_all_items_of_y_to_x(x, y):
     """
     x and y are lists
     """
-    pass
+    #return x+y
+    x.extend(y)
+    return x
 
 
 def list_copy(x):
     """
     Create a shallow copy of x
     """
+    y=[]
+    for i in x:
+        y.append(i)
+    return y
 
