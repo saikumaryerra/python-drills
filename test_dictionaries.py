@@ -57,36 +57,6 @@ class TestBranchingAndLooping(unittest.TestCase):
             output = dict_items_sorted(inp)
             self.assertEqual(output, expected_output)
 
-    def test_n_digit_primes(self):
-        output = n_digit_primes()
-
-        expected_output = [11,
-                           13,
-                           17,
-                           19,
-                           23,
-                           29,
-                           31,
-                           37,
-                           41,
-                           43,
-                           47,
-                           53,
-                           59,
-                           61,
-                           67,
-                           71,
-                           73,
-                           79,
-                           83,
-                           89,
-                           97]
-        self.assertEqual(output, expected_output)
-
-        output = n_digit_primes(1)
-        expected_output = [2, 3, 5, 7]
-        self.assertEqual(output, expected_output)
-
 
 if __name__ == '__main__':
     unittest.main()
