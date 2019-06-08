@@ -8,6 +8,10 @@
 returns the distance between the two points.
 """
 
-
+import math
 class Point:
-    pass
+    def __init__(self,a,b):
+    	self.x=a
+    	self.y=b
+    def distance(self,a_p):
+    	return math.sqrt(((self.x-a_p.x)**2)+((self.y-a_p.y)**2))
