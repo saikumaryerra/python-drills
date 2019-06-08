@@ -11,7 +11,7 @@ class TestMixedBag(unittest.TestCase):
             ([1, 2, 1], set([1, 2])),
         ]
         for args, expected_output in inputs_and_outputs:
-            output = unique(*args)
+            output = unique(args)
             self.assertEqual(output, expected_output)
 
 
